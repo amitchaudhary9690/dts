@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -39,7 +39,7 @@ class CreateSmModuleLinksTable extends Migration
 
 
 
-        $modules = ['Dashboard', 'Admin Section', 'Student Information', 'Teacher', 'Fees Collection', 'Accounts', 'Human resource', 'Leave Application', 'Examination', 'Academics', 'HomeWork', 'Communicate', 'Library', 'Inventory', 'Transport', 'Dormitory', 'Reports', 'ID Card Certificate' 'System Settings', 'Common']; 
+        $modules = ['Dashboard', 'Admin Section', 'Student Information', 'Teacher', 'Fees Collection', 'Accounts', 'Human resource', 'Leave Application', 'Examination', 'Academics', 'HomeWork', 'Communicate', 'Library', 'Inventory', 'Transport', 'Dormitory', 'Reports', 'ID Card Certificate','System Settings', 'Common'];
         
 
         $sql = "INSERT INTO `sm_module_links` (`id`, `module_id`, `name`, `route`, `active_status`, `created_by`, `updated_by`, `school_id`, `created_at`, `updated_at`) VALUES
@@ -135,8 +135,7 @@ class CreateSmModuleLinksTable extends Migration
         (83, 3, 'Disabled Students Menu','disabled-student', 1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'),
         (84, 3, '➡ Disabled Students Add','',1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'),
         (85, 3, '➡ Disabled Students Edit','',1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'),
-        (86, 3, '➡ Disabled Students Delete','',1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'),
-        -- end Student Menu
+        (86, 3, '➡ Disabled Students Delete','',1, 1, 1, 1, '2019-07-25 02:21:21', '2019-07-25 04:24:22'),        -- end Student Menu
 
         -- Start Teacher Menu
         
@@ -639,6 +638,8 @@ class CreateSmModuleLinksTable extends Migration
     {
         Schema::dropIfExists('sm_module_links');
     }
-} -->
+}
+
+
 
 
